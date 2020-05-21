@@ -17,11 +17,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual('Buzz', fizzbuzz.num_to_fizz_string(5))
         self.assertEqual('FizzBuzz', fizzbuzz.num_to_fizz_string(15))
 
-    # def test_generate_list_of_numbers(self):
-    #     list_of_nums = fizzbuzz.generate_list_of_numbers()
-    #     self.assertEqual(100, len(list_of_nums))
-    #     self.assertEqual(1, list_of_nums[0])
-    #     self.assertEqual(100, list_of_nums[99])
+    def test_generate_list_of_numbers(self):
+        list_of_nums = fizzbuzz.generate_list_of_numbers()
+        self.assertEqual(99, len(list_of_nums))
+        self.assertEqual(1, list_of_nums[0])
+        self.assertEqual(99, list_of_nums[98])
 
 
 if __name__ == '__main__':
