@@ -14,7 +14,7 @@ def num_to_fizz_string(number):
     return str(number)
 
 
-def run_fizzbuzz():
+def run_fizz_buzz():
     numbers = generate_list_of_numbers()
 
     for number in numbers:
@@ -23,7 +23,7 @@ def run_fizzbuzz():
 
 
 if __name__ == '__main__':
-    run_fizzbuzz()
+    run_fizz_buzz()
 
 
 
